@@ -6,7 +6,7 @@ Authenticator for `slicknode-client` to authenticate a user with email address a
 
 To use this authenticator, install the slicknode module in your project: 
 
-    slicknode module add 
+    slicknode module add auth-email-password
 
 Then install the authenticator in your (frontend) application:
 
