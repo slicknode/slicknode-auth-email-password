@@ -1,0 +1,42 @@
+{
+  "name": "slicknode-auth-email-password",
+  "version": "0.1.0",
+  "description": "Slicknode authenticator for email / password login",
+  "main": "dist/index.js",
+  "repository": "https://github.com/slicknode/slicknode-auth-email-password.git",
+  "author": "Ivo Meißner <info@overtronic.com>",
+  "license": "MIT",
+  "directories": {
+    "lib": "./dist"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "watch": "mocha --watch --check-leaks --exit --full-trace --require ts-node/register --watch-extensions ts,tsx 'src/**/__tests__/**/*-test.{ts,tsx}'",
+    "clean": "rimraf dist/*",
+    "test": "npm run lint && npm run testonly",
+    "testonly": "mocha --check-leaks --exit --full-trace --require ts-node/register 'src/**/__tests__/**/*-test.{ts,tsx}'",
+    "dist": "npm run clean && tsc",
+    "prepare": "npm run clean && npm run dist"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5",
+    "@types/sinon": "^5.0.2",
+    "chai": "^4.1.2",
+    "eslint": "^5.5.0",
+    "mocha": "^5.2.0",
+    "rimraf": "^2.6.2",
+    "sinon": "^6.2.0",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "slicknode-client": "^0.2.1"
+  }
+}
