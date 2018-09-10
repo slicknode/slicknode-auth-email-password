@@ -40,6 +40,10 @@
   version "5.2.5"
   resolved "https://registry.yarnpkg.com/@types/mocha/-/mocha-5.2.5.tgz#8a4accfc403c124a0bafe8a9fc61a05ec1032073"
 
+"@types/node@^10.9.4":
+  version "10.9.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.9.4.tgz#0f4cb2dc7c1de6096055357f70179043c33e9897"
+
 "@types/sinon@^5.0.2":
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/@types/sinon/-/sinon-5.0.2.tgz#7a9d64df40b26dd48d673f745addc2fdb2bda193"
@@ -919,10 +923,11 @@ slice-ansi@1.0.0:
   dependencies:
     is-fullwidth-code-point "^2.0.0"
 
-slicknode-client@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/slicknode-client/-/slicknode-client-0.2.1.tgz#773b071567d052b2e63bb0937698d91c7adf7440"
+slicknode-client@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/slicknode-client/-/slicknode-client-0.2.2.tgz#f8e85be3e99e32fa1da6158f26f1f9888537ebcd"
   dependencies:
+    "@types/node" "^10.9.4"
     isomorphic-fetch "^2.2.1"
     isomorphic-form-data "^1.0.0"
 
